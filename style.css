@@ -40,8 +40,11 @@ header {
   align-items:center;
 }
 h1 {
-  font-size:40px;
-  font-weight:bold; /* Or use 700 */
+  font-size:60px;
+  font-weight:bold;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .stats {
   display:flex;
