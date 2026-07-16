@@ -84,7 +84,7 @@ h1 {
   left:0;
   top:15px;
   font-size:38px;
-  transition:0.08s linear;
+  transition:left 0.08s linear;
 }
 .quote {
   font-size:28px;

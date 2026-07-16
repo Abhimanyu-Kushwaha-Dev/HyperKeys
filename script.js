@@ -96,7 +96,9 @@ I.oninput=() => {
   // Progress Bar
   const p=Math.min((good / q.length) * 100, 100);
   fill.style.width=p+"%";
-  car.style.left=`calc(${p}%-18px)`;
+  const lane = document.querySelector(".lane");
+  const maxMove = lane.clientWidth - car.offsetWidth;
+  car.style.left = (p / 100) * maxMove + "px";
 
   if (v === q) {
     alert(`Finished!\n\nWPM: ${w.textContent}\nAccuracy: ${a.textContent}`);
