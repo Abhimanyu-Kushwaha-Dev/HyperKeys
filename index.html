@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Neon Typing Racer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="app">
+      <header>
+        <h1>Neon Typing Racer</h1>
+        <div class="stats">
+          <div><span>WPM: </span><b id="w">0</b></div>
+          <div><span>Accuracy: </span><b id="a">0%</b></div>
+        </div>
+      </header>
+      <div class="lane">
+        <div class="finish"></div>
+        <div id="car">🏃‍♂️‍➡️</div>
+      </div>
+      <div id="quote" class="quote"></div>
+      <textarea id="inp" placeholder="Start typing..."></textarea>
+      <div class="bar"><div id="fill"></div></div>
+      <button onclick="restart()">Restart Race</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
